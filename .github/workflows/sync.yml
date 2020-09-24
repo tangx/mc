@@ -4,9 +4,9 @@ on:
   push:
     branches:
         - master
-#     paths:
-#       - '.github/workflows/sync.yml'
-#       - '*.Dockerfile'
+    paths:
+      - '.github/workflows/sync.yml'
+      - '*.Dockerfile'
 
 jobs:
   buildx:
