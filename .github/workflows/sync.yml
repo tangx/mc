@@ -5,8 +5,8 @@ on:
     branches:
         - master
     paths:
-      - '.github/workflows/docker-buildx.yml'
-      - '**.Dockerfile'
+      - '.github/workflows/sync.yml'
+      - '*.Dockerfile'
 
 jobs:
   buildx:
