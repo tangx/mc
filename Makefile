@@ -5,9 +5,13 @@ build:
 	$(MAKE) mc
 	$(MAKE) minio
 
-
 mc:
-	docker buildx build --push --platform=$(PLATFORM) --tag tangx/mc .
+	docker buildx build --push --platform=$(PLATFORM) \
+		--tag=tangx/mc 	\
+		--file=mc.Dockerfile .
 
 minio:
-	docker buildx build --push --platform=$(PLATFORM) --tag tangx/minio .
+	docker buildx build --push --platform=$(PLATFORM) \
+		--tag tangx/minio \
+		--file=minio.Dockerfile .
+
