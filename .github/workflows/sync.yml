@@ -20,5 +20,5 @@ jobs:
       - uses: docker/login-action@v1
         with:
           password: ${{ secrets.DOCKER_PASSWORD }}
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_USER }}
       - run: make
