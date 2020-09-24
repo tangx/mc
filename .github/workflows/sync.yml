@@ -10,9 +10,8 @@ on:
 
 jobs:
   buildx:
-    runs-on:
-      - self-hosted
-      
+    runs-on: ["self-hosted"]
+
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
